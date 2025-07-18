@@ -2,8 +2,8 @@
 
 A collection of essential developer utilities built in one sleek dashboard — crafted with React. Includes handy tools like JSON Formatter, Regex Tester, Base64 Encoder/Decoder, Markdown Previewer, and Currency Converter — with more coming soon!
 
-![React](https://img.shields.io/badge/React-18-blue?logo=react)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-06b6d4?logo=tailwindcss)
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1-06b6d4?logo=tailwindcss)
 ![GSAP](https://img.shields.io/badge/GSAP-3.x-green?logo=greensock)
 ![Open Source](https://img.shields.io/badge/Open--Source-💖-orange)
 ![Status](https://img.shields.io/badge/Project-In%20Progress-yellow)
@@ -12,7 +12,7 @@ A collection of essential developer utilities built in one sleek dashboard — c
 
 ## 📸 Preview
 
-> *(Add a short screen recording or screenshot here once available)*
+> *Loading ...*
 
 ---
 
@@ -35,7 +35,7 @@ A collection of essential developer utilities built in one sleek dashboard — c
 | Animations      | GSAP                              |
 | Routing         | React Router                      |
 | Icons           | Lucide React                      |
-| Deployment      | (Add here later e.g. Netlify)     |
+| Deployment      | Loading...                        |
 
 ---
 
