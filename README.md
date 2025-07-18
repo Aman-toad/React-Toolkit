@@ -1,12 +1,76 @@
-# React + Vite
+# ⚙️ Developer Tools Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of essential developer utilities built in one sleek dashboard — crafted with React. Includes handy tools like JSON Formatter, Regex Tester, Base64 Encoder/Decoder, Markdown Previewer, and Currency Converter — with more coming soon!
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-06b6d4?logo=tailwindcss)
+![GSAP](https://img.shields.io/badge/GSAP-3.x-green?logo=greensock)
+![Open Source](https://img.shields.io/badge/Open--Source-💖-orange)
+![Status](https://img.shields.io/badge/Project-In%20Progress-yellow)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> *(Add a short screen recording or screenshot here once available)*
+
+---
+
+## 🧩 Features
+
+- 🔧 JSON Formatter
+- 🔍 Regex Tester
+- 🔐 Base64 Encoder / Decoder
+- 📝 Markdown Previewer
+- 🎯 Custom Cursor + Animated Background (GSAP)
+
+---
+
+## 🔧 Tech Stack
+
+| Category        | Tech Used                         |
+|----------------|------------------------------------|
+| Framework       | React (Vite)                      |
+| Styling         | Tailwind CSS                      |
+| Animations      | GSAP                              |
+| Routing         | React Router                      |
+| Icons           | Lucide React                      |
+| Deployment      | (Add here later e.g. Netlify)     |
+
+---
+
+
+---
+
+## 🚀 Upcoming Tools
+
+- [ ] UUID Generator
+- [ ] Lorem Ipsum Generator
+- [ ] JWT Decoder
+- [ ] Image to Base64 Converter
+- [ ] QR Code Generator
+
+---
+
+## 🙌 Contributing
+
+Want to add your own mini-tool? Fork this repo and:
+
+1. Clone the repo
+2. Create a new page inside `pages/`
+3. Add your route in `routes/index.jsx`
+4. Submit a PR with your changes 🚀
+
+---
+
+## 🧠 Inspiration
+
+Inspired by the real-life needs of developers during coding, debugging, testing, and hackathons. Clean UI, fast access, and all-in-one experience.
+
+---
+
+## 🌐 Connect
+
+Made with 💻 by Aman Singh
+
+
