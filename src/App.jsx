@@ -1,13 +1,15 @@
-import { useState } from 'react'
+import react, { useState } from 'react'
 import '../src/styles/App.css'
-import AllRoutes from './routes/routes'
+import AllRoutes from './routes/index.jsx'
+import CustomCursor from './components/CustomCursor.jsx'
 
 function App() {
-  
-  return(
-    <div className='bg-slate-800'>
-      <AllRoutes/>
-    </div>
+
+  return (
+    <>
+      <CustomCursor />
+      <AllRoutes />
+    </>
   )
 }
 
