@@ -1,21 +1,20 @@
 "use client"
 
 import { useState } from "react"
+import { NavLink } from "react-router-dom"
 
 export default function Navigation() {
-  const [activeItem, setActiveItem] = useState("home")
-  const[isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
 
   const navItems = [
-    { name: "Home", id: "home" },
-    { name: "Projects", id: "projects" },
-    { name: "Services", id: "services" },
-    { name: "About", id: "about" },
-    { name: "Contact", id: "contact" },
+    { name: "Home", id: "home", nav: "/" },
+    { name: "Projects", id: "projects", nav: "/projects" },
+    { name: "About", id: "about", nav: "/about" },
+    { name: "Contact", id: "contact", nav: "/contact" },
   ]
 
   return (
@@ -31,18 +30,20 @@ export default function Navigation() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => setActiveItem(item.id)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 cursor-none ${
-                    activeItem === item.id
-                      ? "bg-gray-700 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                  }`}
-                >
-                  {item.name}
-                </button>
-              ))}
+              <NavLink
+                key={item.id}
+                to={item.nav}
+                className={({ isActive }) =>
+                  `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 cursor-none ${isActive
+                    ? "bg-gray-700 text-white"
+                    : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
+            ))}
+            
             </div>
           </div>
 
@@ -83,32 +84,35 @@ export default function Navigation() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden">
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-700">
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => setActiveItem(item.id)}
-              className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-all duration-300 cursor-none ${
-                activeItem === item.id ? "bg-gray-600 text-white" : "text-gray-300 hover:bg-gray-600 hover:text-white"
-              } ${isOpen? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}
-            >
-              {item.name}
-            </button>
-          ))}
-          <div className="border-t border-gray-600 pt-4 pb-3">
-            <div className="flex flex-col space-y-2">
-              <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium text-left cursor-none">
-                Login
-              </button>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-md text-base font-medium text-left cursor-none">
-                Register
-              </button>
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-700">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.id}
+                to={item.nav}
+                className={({ isActive }) =>
+                  `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 cursor-none ${isActive
+                    ? "bg-gray-700 text-white"
+                    : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
+            ))}
+            <div className="border-t border-gray-600 pt-4 pb-3">
+              <div className="flex flex-col space-y-2">
+                <button className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium text-left cursor-none">
+                  Login
+                </button>
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-md text-base font-medium text-left cursor-none">
+                  Register
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       )}
-      
+
     </nav>
   )
 }
