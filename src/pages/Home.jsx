@@ -34,7 +34,7 @@ export default function Home() {
         <div className="mt-40 mb-150 w-full ">
           <div className="ml-10 space-x-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mr-10">
             {cards.map((card) => (
-              <div className="p-8 bg-black rounded-2xl flex flex-col mb-7 w-full content-start">
+              <div className="p-8 bg-slate-800 rounded-2xl flex flex-col mb-7 w-full content-start">
                 <div className="circles flex gap-2 mb-6">
                   <div className="h-4 w-4 rounded-full bg-red-600"></div>
                   <div className="h-4 w-4 rounded-full bg-yellow-400"></div>
