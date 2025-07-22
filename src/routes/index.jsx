@@ -3,6 +3,7 @@ import Home from "../pages/Home.jsx"
 import ContactForm from '../pages/Contact.jsx';
 import JsonFormatter from '../pages/JSONFormatter.jsx';
 import RegexTester from '../pages/RegexTester.jsx';
+import MarkDownPreview from '../pages/MarkDownPreviewer.jsx';
 
 const AllRoutes = () => {
   return (
@@ -11,6 +12,7 @@ const AllRoutes = () => {
       <Route path="/contact" element={<ContactForm />} />
       <Route path='/json-formatter' element={<JsonFormatter/>} />
       <Route path='/regex-tester' element={<RegexTester/>} />
+      <Route path="/markdown-preview" element={<MarkDownPreview />} />
     </Routes>
   )
 }
