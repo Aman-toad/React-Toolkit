@@ -4,6 +4,7 @@ import ContactForm from '../pages/Contact.jsx';
 import JsonFormatter from '../pages/JSONFormatter.jsx';
 import RegexTester from '../pages/RegexTester.jsx';
 import MarkDownPreview from '../pages/MarkDownPreviewer.jsx';
+import Base64 from '../pages/Base64Tool.jsx';
 
 const AllRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AllRoutes = () => {
       <Route path='/json-formatter' element={<JsonFormatter/>} />
       <Route path='/regex-tester' element={<RegexTester/>} />
       <Route path="/markdown-preview" element={<MarkDownPreview />} />
+      <Route path="/base64" element={<Base64 />} />
     </Routes>
   )
 }

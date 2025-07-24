@@ -9,7 +9,7 @@ export default function Home() {
     { title: 'JSON Formatter', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>', link:'json-formatter' },
     { title: 'Regex Tester', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>',link:'regex-tester' },
     { title: 'Live Markdown Preview', disc: 'a markdown previwer help you too preview how your text looks in your readme', tech: 'JS', eg: '<h1> Hello world </h1>',link:'markdown-preview' },
-    { title: 'Regex Tester', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>',link:'markdown-previewer' },
+    { title: 'Base 64 Tool', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>',link:'base64' },
     { title: 'Regex Tester', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>' }
   ]
 
