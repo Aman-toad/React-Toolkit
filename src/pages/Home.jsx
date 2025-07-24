@@ -1,18 +1,72 @@
-import React from "react";
-import StarField from "../components/StarBackground";
-import Navigation from "../components/Navbar";
-import { Link } from "react-router-dom";
+import StarField from "../components/StarBackground"
+import Navigation from "../components/Navbar"
+import { Link } from "react-router-dom"
 
 export default function Home() {
-
   const cards = [
-    { title: 'JSON Formatter', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>', link:'json-formatter' },
-    { title: 'Regex Tester', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>',link:'regex-tester' },
-    { title: 'Live Markdown Preview', disc: 'a markdown previwer help you too preview how your text looks in your readme', tech: 'JS', eg: '<h1> Hello world </h1>',link:'markdown-preview' },
-    { title: 'Base 64 Tool', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>',link:'base64' },
-    { title: 'JWT Decoder', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>', link:'jwt-decoder' },
-    { title: 'Color Picker', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>', link:'color-picker' },
-    { title: 'QR Generator', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>', link:'qr-generator' }
+    {
+      title: "JSON Formatter",
+      disc: "Format and validate JSON data with syntax highlighting and error detection for cleaner code structure",
+      tech: "JS",
+      icon: "{ }",
+      link: "json-formatter",
+      bgColor: "bg-gradient-to-br from-slate-800 to-slate-900",
+      borderColor: "border-slate-600",
+    },
+    {
+      title: "Regex Tester",
+      disc: "Test and debug regular expressions with real-time matching and pattern explanation",
+      tech: "JS",
+      icon: ".*",
+      link: "regex-tester",
+      bgColor: "bg-gradient-to-br from-emerald-900 to-emerald-950",
+      borderColor: "border-emerald-700",
+    },
+    {
+      title: "Live Markdown Preview",
+      disc: "Preview markdown in real-time with GitHub-flavored syntax support for documentation",
+      tech: "JS",
+      icon: "MD",
+      link: "markdown-preview",
+      bgColor: "bg-gradient-to-br from-blue-900 to-blue-950",
+      borderColor: "border-blue-700",
+    },
+    {
+      title: "Base64 Encoder/Decoder",
+      disc: "Encode and decode Base64 strings with support for text, images, and binary data",
+      tech: "JS",
+      icon: "64",
+      link: "base64",
+      bgColor: "bg-gradient-to-br from-purple-900 to-purple-950",
+      borderColor: "border-purple-700",
+    },
+    {
+      title: "JWT Decoder",
+      disc: "Decode and inspect JSON Web Tokens with header, payload, and signature verification",
+      tech: "JS",
+      icon: "JWT",
+      link: "jwt-decoder",
+      bgColor: "bg-gradient-to-br from-amber-900 to-amber-950",
+      borderColor: "border-amber-700",
+    },
+    {
+      title: "Color Picker",
+      disc: "Pick colors with multiple format support including HEX, RGB, HSL, and color palette generation",
+      tech: "JS",
+      icon: "🎨",
+      link: "color-picker",
+      bgColor: "bg-gradient-to-br from-rose-900 to-rose-950",
+      borderColor: "border-rose-700",
+    },
+    {
+      title: "QR Code Generator",
+      disc: "Generate customizable QR codes for URLs, text, and data with download options",
+      tech: "JS",
+      icon: "⚡",
+      link: "qr-generator",
+      bgColor: "bg-gradient-to-br from-teal-900 to-teal-950",
+      borderColor: "border-teal-700",
+    },
   ]
 
   return (
@@ -21,36 +75,71 @@ export default function Home() {
       <div className="min-h-screen">
         <Navigation />
 
-        <div className="flex items-center justify-center pt-20">
-          <div className="w-full max-w-2xl flex flex-col">
-            <h1 className="text-3xl md:text-4xl font-normal mb-16 ">Welcome,  to react tools where you can find the tools that make your Work easy</h1>
+        <div className="flex items-center justify-center pt-16 px-4">
+          <div className="w-full max-w-4xl flex flex-col items-center text-center">
+            <div className="mb-8">
+              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent mb-4">
+                Developer Tools Hub
+              </h1>
+              <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                A curated collection of essential web development tools to streamline your workflow and boost
+                productivity
+              </p>
+            </div>
 
-            <div className="flex justify-center items-center mt-50">
-              <button className="border p-5 w-50 text-2xl rounded-3xl hover:bg-gray-800 cursor-none">
-                Tools
-              </button>
+            <div className="flex justify-center items-center mt-8 mb-16">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                <button className="relative bg-gray-900 border border-gray-700 px-8 py-4 text-xl rounded-full hover:bg-gray-800 cursor-none transition-all duration-300 font-medium">
+                  Explore Tools
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        {/* cards */}
-        <div className="mt-40 mb-150 w-full ">
-          <div className="ml-10 space-x-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 m-10">
-            {cards.map((card) => (
-              <div className="p-8 bg-slate-800 rounded-2xl flex flex-col mb-7 w-full content-start">
-                <div className="circles flex gap-2 mb-6">
-                  <div className="h-4 w-4 rounded-full bg-red-600"></div>
-                  <div className="h-4 w-4 rounded-full bg-yellow-400"></div>
-                  <div className="h-4 w-4 rounded-full bg-green-600"></div>
+
+        {/* Cards Grid */}
+        <div className="max-w-7xl mx-auto px-6 pb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {cards.map((card, index) => (
+              <div
+                key={index}
+                className={`${card.bgColor} ${card.borderColor} border rounded-xl p-6 flex flex-col h-full hover:scale-105 transition-all duration-300 hover:shadow-2xl group relative overflow-hidden`}
+              >
+                {/* Subtle glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                {/* Header with circles and icon */}
+                <div className="flex items-center justify-between mb-4 relative z-10">
+                  <div className="flex gap-2">
+                    <div className="h-3 w-3 rounded-full bg-red-500"></div>
+                    <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
+                    <div className="h-3 w-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <div className="text-2xl font-mono font-bold text-gray-300">{card.icon}</div>
                 </div>
-                <h2 className="font-bold text-2xl mb-4">{card.title}</h2>
-                <p className="text-gray-300 mb-4">{card.disc}</p>
-                <button className="border w-10 rounded-sm">{card.tech}</button>
-                <div className="border mt-8 p-4 rounded-md">
-                  {card.eg}
+
+                {/* Content */}
+                <div className="flex-1 relative z-10">
+                  <h3 className="font-bold text-xl mb-3 text-white group-hover:text-gray-100 transition-colors">
+                    {card.title}
+                  </h3>
+                  <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">{card.disc}</p>
                 </div>
-                <Link 
-                to={card.link}
-                className="mt-5 cursor-none hover:underline">View Tool &rarr;</Link>
+
+                {/* Footer */}
+                <div className="flex items-center justify-between mt-auto relative z-10">
+                  <span className="bg-gray-800/50 border border-gray-600 px-3 py-1 rounded-md text-xs font-medium text-gray-300">
+                    {card.tech}
+                  </span>
+                  <Link
+                    to={card.link}
+                    className="text-blue-400 hover:text-blue-300 cursor-none text-sm font-medium hover:underline transition-colors flex items-center gap-1"
+                  >
+                    Try Tool
+                    <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
