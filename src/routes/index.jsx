@@ -7,6 +7,7 @@ import MarkDownPreview from '../pages/MarkDownPreviewer.jsx';
 import Base64 from '../pages/Base64Tool.jsx';
 import JWTDecoder from '../pages/JWTdecoder.jsx';
 import ColorPicker from '../pages/colorPicker.jsx';
+import QRGenerator from '../pages/QRgenerator.jsx';
 
 const AllRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const AllRoutes = () => {
       <Route path="/base64" element={<Base64 />} />
       <Route path="/jwt-decoder" element={<JWTDecoder />} />
       <Route path="/color-picker" element={<ColorPicker />} />
+      <Route path="/qr-generator" element={<QRGenerator />} />
     </Routes>
   )
 }

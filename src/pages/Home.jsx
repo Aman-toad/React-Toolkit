@@ -11,7 +11,8 @@ export default function Home() {
     { title: 'Live Markdown Preview', disc: 'a markdown previwer help you too preview how your text looks in your readme', tech: 'JS', eg: '<h1> Hello world </h1>',link:'markdown-preview' },
     { title: 'Base 64 Tool', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>',link:'base64' },
     { title: 'JWT Decoder', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>', link:'jwt-decoder' },
-    { title: 'Color Picker', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>', link:'color-picker' }
+    { title: 'Color Picker', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>', link:'color-picker' },
+    { title: 'QR Generator', disc: 'a json formatter which set your data structure in a easy mode', tech: 'JS', eg: '<h1> Hello world </h1>', link:'qr-generator' }
   ]
 
   return (
@@ -33,7 +34,7 @@ export default function Home() {
         </div>
         {/* cards */}
         <div className="mt-40 mb-150 w-full ">
-          <div className="ml-10 space-x-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mr-10">
+          <div className="ml-10 space-x-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 m-10">
             {cards.map((card) => (
               <div className="p-8 bg-slate-800 rounded-2xl flex flex-col mb-7 w-full content-start">
                 <div className="circles flex gap-2 mb-6">
