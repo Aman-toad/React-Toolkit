@@ -104,15 +104,6 @@ export default function Home() {
       borderColor: "border-red-700",
     },
     {
-      title: "MARKDOWN TO HTML PREVIEWER",
-      disc: "Generate customizable QR codes for URLs, text, and data with download options",
-      tech: "JS",
-      icon: "⚡",
-      link: "markdown-html",
-      bgColor: "bg-gradient-to-br from-black to-teal-950",
-      borderColor: "border-sky-700",
-    },
-    {
       title: "RESPONSIVE DESIGN TESTER",
       disc: "Generate customizable QR codes for URLs, text, and data with download options",
       tech: "JS",

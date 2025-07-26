@@ -12,7 +12,6 @@ import TechStackFinder from '../pages/TechStackFinder.jsx';
 import JsonToCsv from '../pages/jsonToCsv.jsx';
 import UUIDGenerator from '../pages/UuidGenerator.jsx';
 import FakeUserData from '../pages/fakeData.jsx';
-import MarkDownToHtml from '../pages/MarkdownToHtml.jsx';
 import ResponsiveDesigntester from '../pages/ResponseTester.jsx';
 import FaviconGenerator from '../pages/FaviconGenerator.jsx';
 import TimeZoneConverter from '../pages/TimeZoneConvertor.jsx';
@@ -33,7 +32,6 @@ const AllRoutes = () => {
       <Route path='/json-csv' element={<JsonToCsv/>}/>
       <Route path='/uuidGenerator' element={<UUIDGenerator/>}/>
       <Route path='/fakeDataGenerator' element={<FakeUserData/>}/>
-      <Route path='/markdown-html' element={<MarkDownToHtml/>}/>
       <Route path='/responsiveTester' element={<ResponsiveDesigntester/>}/>
       <Route path='/faviconGenerator' element={<FaviconGenerator/>}/>
       <Route path='/timeZone' element={<TimeZoneConverter/>}/>
