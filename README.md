@@ -2,12 +2,11 @@
 
 A fully-packed collection of essential developer utilities built with **React**. From formatting JSON and testing regex to generating favicons and converting timezones — all in one sleek dashboard.
 
-![React](https://img.shields.io/badge/React-18-blue?logo=react)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1-06b6d4?logo=tailwindcss)
-![Lucide](https://img.shields.io/badge/Icons-Lucide-yellow)
-![MIT](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-![Open Source](https://img.shields.io/badge/Open--Source-💖-ff69b4)
+[![React](https://img.shields.io/badge/React-18-blue?logo=react)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1-06b6d4?logo=tailwindcss)
+[![Lucide](https://img.shields.io/badge/Icons-Lucide-yellow)
+[![MIT](https://img.shields.io/badge/License-MIT-green)
+[![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
 ---
 
